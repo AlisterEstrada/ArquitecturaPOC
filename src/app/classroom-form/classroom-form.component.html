@@ -1,0 +1,33 @@
+<form #frameParametersForm="ngForm" autocomplete="off" (ngSubmit)="sendClassroom()">
+    <div class="input-gr">
+      <label>ID del salón *</label>
+      <input type="text" required name="ID" [(ngModel)]="classroomInputForm.ID">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+    </div>
+      <div class="input-gr">
+        <label>Horario inicio *</label>
+        <input type="text" required name="horarioInicio" [(ngModel)]="classroomInputForm.horarioInicio">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        </div>
+    <div class="input-gr">
+      <label>Horario fin *</label>
+      <input type="text" required name="horarioFin" [(ngModel)]="classroomInputForm.horarioFin">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="input-gr">
+        <label>Correo *</label>
+        <input type="text" required name="correo" [(ngModel)]="classroomInputForm.correo">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="input-gr">
+        <label>Motivo *</label>
+        <input type="text" required name="motivo" [(ngModel)]="classroomInputForm.motivo">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+      </div>
+      <button type="submit" class="btn-secondary confirm">Guardar</button>
+  </form>
