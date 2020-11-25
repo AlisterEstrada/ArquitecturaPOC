@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Correo</th>
+        <th scope="col">Motivo</th>
+        <th scope="col">Horario Inicio</th>
+        <th scope="col">Horario Final</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="contentTableContainerGrid cols-7" *ngFor="let classrooms of classRoomItems">
+            <th scope="row">{{classrooms.ID}}</th>
+            <td>{{classrooms.Correo}}</td>
+            <td>{{classrooms.Motivo}}</td>
+            <td>{{classrooms.HorarioInicio}}</td>
+            <td>{{classrooms.HorarioFinal}}</td>
+        </tr>
+    </tbody>
+</table>

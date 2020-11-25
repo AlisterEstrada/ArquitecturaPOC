@@ -1,30 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
-
-import { AppRoutingModule } from './app-routing.module';
+import { ClassroomService } from './classroom.service';
 import { AppComponent } from './app.component';
-
-import { RegistroComponent } from './pages/registro/registro.component';
-import { HomeComponent } from './pages/home/home.component';
-import { LoginComponent } from './pages/login/login.component';
+import { TestComponent } from './test/test.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistroComponent,
-    HomeComponent,
-    LoginComponent
+    TestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ClassroomService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
