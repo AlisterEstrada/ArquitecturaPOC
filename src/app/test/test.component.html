@@ -18,5 +18,10 @@
         </tr>
     </tbody>
 </table>
+<div class="dls-menu-item">
+  <button type="button" class="btn btn-primary" (click)="onPress()">Add classroom</button>
+</div>
 
-<app-classroom-form (emitClassroomData)="sendClassroomData($event)"></app-classroom-form>
+<div id="comp-render" *ngIf="display">
+  <app-classroom-form (emitClassroomData)="sendClassroomData($event)"></app-classroom-form>
+</div>

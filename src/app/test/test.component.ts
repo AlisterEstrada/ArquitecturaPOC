@@ -33,4 +33,11 @@ export class TestComponent implements OnInit{
 
     this.classroomService.addClassroomService(objPetition);
   }
+  display = false;
+  onPress() {
+    //this.display = true;
+
+    //To toggle the component
+    this.display = !this.display;
+  }
 }

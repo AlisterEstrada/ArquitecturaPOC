@@ -1,33 +1,27 @@
-<form #frameParametersForm="ngForm" autocomplete="off" (ngSubmit)="sendClassroom()">
-    <div class="input-gr">
+
+
+  <form class="form-class" #frameParametersForm="ngForm" autocomplete="off" (ngSubmit)="sendClassroom()">
+    <div class="form-group">
       <label>ID del salón *</label>
-      <input type="text" required name="ID" [(ngModel)]="classroomInputForm.ID">
-      <span class="highlight"></span>
-      <span class="bar"></span>
+      <input type="text" class="form-control" required name="ID" [(ngModel)]="classroomInputForm.ID">
     </div>
-      <div class="input-gr">
-        <label>Horario inicio *</label>
-        <input type="text" required name="horarioInicio" [(ngModel)]="classroomInputForm.horarioInicio">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        </div>
-    <div class="input-gr">
+    <div class="form-group">
+      <label>Horario inicio *</label>
+        <input type="text" class="form-control" required name="horarioInicio" [(ngModel)]="classroomInputForm.horarioInicio">
+    </div>
+    <div class="form-group">
       <label>Horario final *</label>
-      <input type="text" required name="horarioFin" [(ngModel)]="classroomInputForm.horarioFin">
-      <span class="highlight"></span>
-      <span class="bar"></span>
+      <input type="text" class="form-control" required name="horarioFin" [(ngModel)]="classroomInputForm.horarioFin">
     </div>
-    <div class="input-gr">
-        <label>Correo *</label>
-        <input type="text" required name="correo" [(ngModel)]="classroomInputForm.correo">
-        <span class="highlight"></span>
-        <span class="bar"></span>
+    <div class="form-group">
+      <label>Correo *</label>
+      <input type="text" class="form-control" required name="correo" [(ngModel)]="classroomInputForm.correo">
     </div>
-    <div class="input-gr">
-        <label>Motivo *</label>
-        <input type="text" required name="motivo" [(ngModel)]="classroomInputForm.motivo">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-      </div>
-      <button type="submit" class="btn-secondary confirm">Guardar</button>
+    <div class="form-group">
+      <label>Motivo *</label>
+      <input type="text" class="form-control" required name="motivo" [(ngModel)]="classroomInputForm.motivo">
+    </div>
+    <div class="button-class">
+      <button type="submit" class="btn btn-primary">Register classroom</button>
+    </div>
   </form>
