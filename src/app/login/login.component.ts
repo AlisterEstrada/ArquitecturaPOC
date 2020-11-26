@@ -31,8 +31,7 @@ export class LoginComponent implements OnInit {
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
-      body: raw,
-      redirect: 'follow'
+      body: raw
     };
 
     // make API call with parameters and use promises to get response
