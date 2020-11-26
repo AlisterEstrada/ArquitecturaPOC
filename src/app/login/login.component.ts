@@ -14,22 +14,16 @@ import { HttpClient } from "@angular/common/http";
 })
 export class LoginComponent implements OnInit {
 
-
-
   ngOnInit() {
 
   }
-
-
   login( form: NgForm ) {
-
 
     var myHeaders = new Headers();
             // add content type header to object
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({"User":"A01336767"});
-
 
     console.log(raw);
     var alumno = [];
@@ -40,11 +34,10 @@ export class LoginComponent implements OnInit {
       body: raw,
       redirect: 'follow'
     };
-    console.log(requestOptions);
+
     // make API call with parameters and use promises to get response
      fetch("https://l64x96k0ta.execute-api.us-west-2.amazonaws.com/dev", requestOptions)
-    .then(response => response.json())
-    .then(data => console.log(data));
+    .then(response => response.json());
 
 
 
