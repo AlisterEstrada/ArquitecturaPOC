@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 
-
 import { HttpClient } from "@angular/common/http";
-
 
 
 @Component({
@@ -14,21 +12,16 @@ import { HttpClient } from "@angular/common/http";
 })
 export class LoginComponent implements OnInit {
 
+
+
+
+  constructor( ) { }
+
   ngOnInit() {
 
   }
-  login( form: NgForm ) {
 
-    var myHeaders = new Headers();
-            // add content type header to object
-    myHeaders.append("Content-Type", "application/json");
 
-    var raw = JSON.stringify({"User":"A01336767"});
-
-    console.log(raw);
-  
-
-    }
 
 
 }
