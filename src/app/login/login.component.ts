@@ -22,14 +22,13 @@ export class LoginComponent implements OnInit {
 
 
   login( form: NgForm ) {
-    var firstName = document.getElementById('User').value ;
-    var pass = document.getElementById('Password').value ;
+
 
     var myHeaders = new Headers();
             // add content type header to object
     myHeaders.append("Content-Type", "application/json");
 
-    var raw = JSON.stringify({"User":firstName, "Password" : pass});
+    var raw = JSON.stringify({"User":"A01336767"});
 
 
     console.log(raw);
