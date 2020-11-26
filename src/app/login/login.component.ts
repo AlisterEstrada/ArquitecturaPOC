@@ -22,9 +22,6 @@ export class LoginComponent implements OnInit {
 
 
   login( form: NgForm ) {
-    console.log("Hizo login" );
-    console.log( document.getElementById('User').value );
-    console.log( document.getElementById('Password').value );
     var firstName = document.getElementById('User').value ;
     var pass = document.getElementById('Password').value ;
 
@@ -50,7 +47,7 @@ export class LoginComponent implements OnInit {
     .then(response => response.json())
     .then(data => console.log(data));
 
-  
+
 
 
     }
